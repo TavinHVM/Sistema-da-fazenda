@@ -60,13 +60,25 @@ th, td {
     text-align: left;
 }
 
+/* Estilização dos botões */
+.buttons-container {
+    display: flex;
+    justify-content: space-between; /* "Voltar" à esquerda, outros botões à direita */
+    align-items: center; /* Alinha todos os botões na mesma altura */
+    margin-top: 20px; /* Espaçamento entre os botões e o restante do conteúdo */
+}
+
+.button-voltar {
+    margin: 0; /* Remove margens desnecessárias */
+}
+
 .buttons {
-    text-align: right;
+    display: flex;
+    gap: 10px; /* Espaçamento entre os botões */
 }
 
 button {
     padding: 8px 12px;
-    margin: 5px;
     background-color: #0066cc;
     color: #fff;
     border: none;

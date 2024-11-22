@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -14,7 +15,7 @@
         <div class="content">
             <div class="info-gerais">
                 <label>Código:</label>
-                <input type="text">
+                <input type="text" name="codigo">
                 
                 <div class="classification">
                     <label>Classificação:</label>
@@ -29,48 +30,56 @@
                 </div>
 
                 <label>CPF/CNPJ:</label>
-                <input type="text">
+                <input type="text" name="cpf_cnpj">
 
                 <label>Nome:</label>
-                <input type="text">
+                <input type="text" name="nome">
 
                 <label>Grupo:</label>
-                <select>
+                <select name="grupo">
                     <option>GRUPO GERAL CLIENTES</option>
+                    <option>GRUPO GERAL FUNCIONÁRIOS</option>
                 </select>
             </div>
 
             <div class="info-pessoais">
                 <label>Dt. nasc:</label>
-                <input type="date">
+                <input type="date" name="dt_nasc">
                 
                 <label>Sexo:</label>
-                <select>
-                    <option>0 - NENHUM</option>
+                <select name="sexo">
+                    <option value="0">0 - NENHUM</option>
+                    <option value="1">1 - MASCULINO</option>
+                    <option value="2">2 - FEMININO</option>
                 </select>
                 
                 <label>Estado Civil:</label>
-                <select>
-                    <option>0 - NENHUM</option>
+                <select name="estado_civil">
+                    <option value="0">0 - NENHUM</option>
+                    <option value="1">1 - CASADO</option>
+                    <option value="2">2 - SOLTEIRO</option>
+                    <option value="3">3 - UNIÃO ESTÁVEL</option>
+                    <option value="4">4 - DIVORCIADO(A)</option>
+                    <option value="5">5 - VIÚVO(A)</option>
                 </select>
 
                 <label>Email:</label>
-                <input type="email">
+                <input type="email" name="email">
                 
                 <label>Tipo doc:</label>
-                <input type="text">
+                <input type="text" name="tipo_doc">
 
                 <label>Número:</label>
-                <input type="text">
+                <input type="text" name="numero">
                 
                 <label>Org. Exped:</label>
-                <input type="text">
+                <input type="text" name="orgao_exped">
                 
                 <label>UF:</label>
-                <input type="text">
+                <input type="text" name="uf">
                 
                 <label>Dt. Emissão:</label>
-                <input type="date">
+                <input type="date" name="dt_emissao">
             </div>
 
             <div class="telefones">
@@ -81,7 +90,6 @@
                         <th>N° Telefone</th>
                         <th>Observação</th>
                     </tr>
-                    <!-- Linha de exemplo -->
                     <tr>
                         <td><input type="text"></td>
                         <td><input type="text"></td>
@@ -100,7 +108,6 @@
                         <th>NF</th>
                         <th>Observação</th>
                     </tr>
-                    <!-- Linha de exemplo -->
                     <tr>
                         <td><input type="text"></td>
                         <td><input type="text"></td>
@@ -113,14 +120,18 @@
 
             <div class="observacoes">
                 <label>Observações e informações profissionais</label>
-                <textarea></textarea>
+                <textarea name="observacoes"></textarea>
             </div>
-
+            
+            <div class="button-voltar">
+                <button id="btn-voltar">Voltar</button>
+            </div>
+            
             <div class="buttons">
-                <button>Excluir</button>
-                <button>Limpar</button>
-                <button>Refazer</button>
-                <button>Gravar</button>
+                <button id="btn-excluir">Excluir</button>
+                <button id="btn-limpar">Limpar</button>
+                <button id="btn-refazer">Refazer</button>
+                <button id="btn-gravar">Gravar</button>
             </div>
         </div>
     </div>
