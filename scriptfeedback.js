@@ -4,7 +4,7 @@ document.getElementById('feedback-form').addEventListener('submit', function(eve
     const nome = document.getElementById('nome').value;
     const comentario = document.getElementById('comentario').value;
 
-    fetch('api.php', {
+    fetch('feedback-api.php', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ nome, comentario })
@@ -17,7 +17,7 @@ document.getElementById('feedback-form').addEventListener('submit', function(eve
 });
 
 function carregarFeedbacks() {
-    fetch('api.php')
+    fetch('feedback-api.php')
         .then(response => response.json())
         .then(data => {
             const tbody = document.querySelector('#feedback-table tbody');
@@ -38,7 +38,7 @@ function carregarFeedbacks() {
 }
 
 function excluirFeedback(index) {
-    fetch('api.php', {
+    fetch('feedback-api.php', {
         method: 'DELETE',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ index })
