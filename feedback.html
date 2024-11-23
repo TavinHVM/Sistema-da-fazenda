@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback de Clientes</title>
+    <link rel="stylesheet" href="stylefeedback.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Feedback de Clientes - Fazenda Doce de Leite</h1>
+        </div>
+
+        <div class="content">
+            <h3>Registrar Feedback</h3>
+            <form id="feedback-form">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+                
+                <label for="comentario">Comentário:</label>
+                <textarea id="comentario" name="comentario" required></textarea>
+
+                <div class="buttons-container">
+                    <button type="submit">Salvar Feedback</button>
+                </div>
+            </form>
+
+            <h3>Feedbacks Registrados</h3>
+            <table id="feedback-table">
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Comentário</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Feedbacks aparecerão aqui -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="scriptfeedback.js"></script>
+</body>
+</html>
