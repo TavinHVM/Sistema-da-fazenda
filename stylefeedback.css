@@ -59,6 +59,12 @@ button:hover {
     background-color: #0055a3;
 }
 
+.buttons-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
 table {
     width: 100%;
     border-collapse: collapse;
