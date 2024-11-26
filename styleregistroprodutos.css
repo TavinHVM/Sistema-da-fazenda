@@ -15,7 +15,6 @@ body {
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Fundo azul no título */
 h1 {
     font-size: 20px;
     color: white;
@@ -27,7 +26,6 @@ h1 {
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-/* Configuração de layout */
 .split-section {
     display: flex;
     flex-direction: column;
@@ -35,7 +33,6 @@ h1 {
     margin-bottom: 20px;
 }
 
-/* Estilo dos formulários */
 .form-section {
     background-color: #f9f9f9;
     padding: 15px;
@@ -66,7 +63,6 @@ input[type="text"]:focus, input[type="date"]:focus, select:focus {
     box-shadow: 0 0 4px rgba(0, 123, 255, 0.5);
 }
 
-/* Estilo das tabelas */
 .table-section {
     background-color: #ffffff;
     padding: 10px;
@@ -102,7 +98,6 @@ tr:hover {
     background-color: #f2f2f2;
 }
 
-/* Botões */
 .buttons-container {
     display: flex;
     justify-content: space-between;
@@ -120,58 +115,49 @@ button {
     color: white;
 }
 
-/* Botão "Voltar" */
 button#btn-voltar {
-    background-color: #007bff; /* Azul */
+    background-color: #007bff;
 }
 
-/* Botões específicos para cada tela */
-
-/* Tela de produtos */
 button#btn-limpar-produto {
-    background-color: #f0ad4e; /* Laranja */
+    background-color: #f0ad4e;
 }
 
 button#btn-gravar-produto {
-    background-color: #28a745; /* Verde */
+    background-color: #28a745;
 }
 
-/* Tela de clientes */
 button#btn-limpar-cliente {
-    background-color: #f0ad4e; /* Laranja */
+    background-color: #f0ad4e;
 }
 
 button#btn-gravar-cliente {
-    background-color: #28a745; /* Verde */
+    background-color: #28a745;
 }
 
-/* Botões na tabela */
 button.btn-editar {
-    background-color: #007bff; /* Azul */
+    background-color: #007bff;
 }
 
 button.btn-excluir {
-    background-color: #dc3545; /* Vermelho */
+    background-color: #dc3545;
 }
 
 button:hover {
     opacity: 0.9;
 }
 
-/* Responsividade */
 @media (max-width: 768px) {
     .split-section {
         gap: 10px;
     }
 }
 
-/* Botões específicos para cada tela */
 
-/* Tela de funcionários */
 button#btn-limpar-funcionario {
-    background-color: #f0ad4e; /* Laranja */
+    background-color: #f0ad4e;
 }
 
 button#btn-gravar-funcionario {
-    background-color: #28a745; /* Verde */
+    background-color: #28a745;
 }

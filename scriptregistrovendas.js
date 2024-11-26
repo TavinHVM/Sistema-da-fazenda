@@ -130,7 +130,7 @@ document.addEventListener("DOMContentLoaded", function () {
             .then(vendas => {
                 const venda = vendas.find(v => v.codigo == vendaId);
                 const novaVenda = {
-                    codigo: null, // Novo código será atribuído automaticamente pela API
+                    codigo: null, // Novo código atribuído automaticamente pela API
                     cliente: venda.cliente,
                     funcionario: venda.funcionario,
                     produto: venda.produto,

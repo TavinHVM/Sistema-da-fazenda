@@ -1,14 +1,12 @@
 <?php
 header('Content-Type: application/json');
 
-// Caminhos dos arquivos JSON
 $clientesJson = 'clientes.json';
 $produtosJson = 'produtos.json';
 $funcionariosJson = 'funcionarios.json';
 $vendasJson = 'vendas.json';
 $fornecedoresJson = 'fornecedores.json';
 
-// Função para ler os dados do JSON
 function lerJson($caminho) {
     if (!file_exists($caminho)) {
         return [];
@@ -16,7 +14,6 @@ function lerJson($caminho) {
     return json_decode(file_get_contents($caminho), true) ?: [];
 }
 
-// Função para salvar dados no JSON
 function salvarJson($caminho, $dados) {
     file_put_contents($caminho, json_encode($dados, JSON_PRETTY_PRINT));
 }
@@ -47,7 +44,6 @@ switch ($endpoint) {
         exit;
 }
 
-// Leitura dos dados do arquivo JSON correspondente
 $dados = lerJson($jsonPath);
 
 switch ($_SERVER['REQUEST_METHOD']) {
@@ -60,7 +56,7 @@ switch ($_SERVER['REQUEST_METHOD']) {
         if (isset($input['codigo'])) {
             foreach ($dados as &$item) {
                 if ($item['codigo'] == $input['codigo']) {
-                    $item = $input; // Atualiza o registro
+                    $item = $input;
                     $atualizado = true;
                     break;
                 }
@@ -103,7 +99,7 @@ switch ($_SERVER['REQUEST_METHOD']) {
         break;
 
     default:
-        http_response_code(405); // Método não permitido
+        http_response_code(405);
         echo json_encode(['message' => 'Método não permitido.']);
 }
 ?>

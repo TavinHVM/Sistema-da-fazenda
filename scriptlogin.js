@@ -4,7 +4,6 @@ document.getElementById("login-form").addEventListener("submit", function (event
     const login = document.getElementById("login").value;
     const senha = document.getElementById("senha").value;
 
-    // Logins fixos para demonstração
     const usuarios = {
         admin: { senha: "adminadmin", tipo: "admin" },
         funcionario: { senha: "fazendafuncionario", tipo: "funcionario" },

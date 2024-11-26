@@ -15,7 +15,6 @@ body {
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Fundo azul no título */
 h1 {
     font-size: 20px;
     color: white;
@@ -27,7 +26,6 @@ h1 {
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-/* Configuração de layout */
 .split-section {
     display: flex;
     flex-direction: column;
@@ -35,7 +33,6 @@ h1 {
     margin-bottom: 20px;
 }
 
-/* Estilo dos formulários */
 .form-section {
     background-color: #f9f9f9;
     padding: 15px;
@@ -66,7 +63,6 @@ input:focus, select:focus {
     box-shadow: 0 0 4px rgba(0, 123, 255, 0.5);
 }
 
-/* Botões principais */
 button {
     padding: 8px 12px;
     font-size: 14px;
@@ -90,9 +86,8 @@ button#btn-gravar-fornecedor {
     background-color: #28a745;
 }
 
-/* Botões na tabela */
 button.btn-editar {
-    background-color: #007bff; /* Azul */
+    background-color: #007bff;
     color: white;
     border: none;
     border-radius: 5px;
@@ -101,7 +96,7 @@ button.btn-editar {
 }
 
 button.btn-excluir {
-    background-color: #dc3545; /* Vermelho */
+    background-color: #dc3545;
     color: white;
     border: none;
     border-radius: 5px;
@@ -113,7 +108,6 @@ button:hover {
     opacity: 0.9;
 }
 
-/* Estilo da tabela */
 .table-section {
     background-color: #ffffff;
     padding: 10px;
