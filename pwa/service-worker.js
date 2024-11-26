@@ -1,12 +1,12 @@
-const CACHE_NAME = 'fazenda-static-cache-v1.0.3';
+const CACHE_NAME = 'fazenda-static-cache-v1.0.4';
 
 const urlsToCache = [
-    'favicon.ico',
-    'icon-192x192.png',
-    'icon-512x512.png',
-    'index.html',
-    'manifest.json',
-    'offline.html'
+    '/pwa/favicon.ico',
+    '/pwa/icon-192x192.png',
+    '/pwa/icon-512x512.png',
+    '/pwa/index.html',
+    '/pwa/manifest.json',
+    '/pwa/offline.html'
 ];
 
 self.addEventListener('install', event => {
@@ -35,7 +35,7 @@ self.addEventListener('activate', event => {
 self.addEventListener('fetch', event => {
     event.respondWith(
         fetch(event.request).catch(() => {
-            return caches.match('offline.html');
+            return caches.match('/pwa/offline.html');
         })
     );
 });
