@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Registro de Produtos</title>
+    <link rel="stylesheet" href="styleregistroprodutos.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>Registro de Produtos</h1>
+    
+    <div class="split-section">
+        <!-- Cadastro de Produtos -->
+        <div class="form-section">
+            <h2>Cadastrar Produtos</h2>
+            <label for="codigo-produto">Código do Produto:</label>
+            <input type="text" id="codigo-produto" readonly>
+            
+            <label for="nome-produto">Produto:</label>
+            <input type="text" id="nome-produto">
+            
+            <label for="unidade-produto">Unidade:</label>
+            <input type="text" id="unidade-produto">
+            
+            <label for="estoque">Estoque:</label>
+            <input type="text" id="estoque">
+            
+            <label for="preco">Preço:</label>
+            <input type="text" id="preco">
+            
+            <label for="temperatura-ideal">Temp. Ideal:</label>
+            <input type="text" id="temperatura-ideal">
+            
+            <label for="observacoes">Observações:</label>
+            <input type="text" id="observacoes">
+            
+            <!-- Botões -->
+            <div class="buttons-container">
+                <a href="inicial.html"><button id="btn-voltar">Voltar</button></a>
+                <button id="btn-limpar-produto">Limpar</button>
+                <button id="btn-gravar-produto">Gravar</button>
+            </div>
+        </div>
+        
+        <!-- Tabela de Produtos -->
+        <div class="table-section">
+            <h2>Produtos Disponíveis</h2>
+            <table id="tabela-produtos">
+                <thead>
+                    <tr>
+                        <th>Código do Produto</th>
+                        <th>Produto</th>
+                        <th>Unidade</th>
+                        <th>Estoque</th>
+                        <th>Preço</th>
+                        <th>Temp. Ideal</th>
+                        <th>Observações</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+<script src="scriptregistroprodutos.js"></script>
+</body>
+</html>

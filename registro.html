@@ -1,142 +1,15 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>Registro de Vendas e Adição de Produtos</title>
-    <link rel="stylesheet" href="styleregistro.css">
+    <title>Registros</title>
+    <link rel="stylesheet" href="styleglobal.css">
 </head>
 <body>
-
-<div class="container">
-    <h1>Registro de vendas e adição de produtos</h1>
-    
-    <div class="form-section">
-        <!-- Botões de ações -->
-        <div class="buttons form-column">
-            <button class="new-sale">Nova venda</button>
-            <button class="delete">Excluir</button>
-            <button class="confirm">Confirmar</button>
-        </div>
-        
-        <!-- Formulário de Registro de Venda -->
-        <div class="form-column">
-            <label for="codigo-venda">Código da venda:</label>
-            <input type="text" id="codigo-venda">
-            
-            <label for="funcionario">Funcionário:</label>
-            <select id="funcionario">
-                <option>Funcionário</option>
-            </select>
-            
-            <label for="cliente">Cliente:</label>
-            <select id="cliente">
-                <option>Cliente</option>
-            </select>
-            
-            <label for="produto">Produto:</label>
-            <select id="produto">
-                <option>Produto</option>
-            </select>
-            
-            <label for="quantidade">Quantidade:</label>
-            <input type="text" id="quantidade" value="1">
-            
-            <label for="valor">Valor:</label>
-            <input type="text" id="valor" value="R$">
-            
-            <label for="unidade">Unidade:</label>
-            <input type="text" id="unidade" value="Lata 350g">
-        </div>
+    <div class="container">
+        <h1>Sistema da Fazenda</h1>
+        <a href="registrovenda.html"><button id="btn-registrarvendas">Registrar Vendas</button></a>
+        <a href="registroproduto.html"><button id="btn-registrarprodutos">Registrar Produtos</button></a>
+        <a href="inicial.html"><button id="btn-voltar">Voltar</button></a>
     </div>
-    
-    <div class="button-voltar">
-        <button onclick="window.location.href='inicial.html';">Voltar</button>
-    </div>
-    <br>
-
-    <!-- Tabelas -->
-    <div class="table-section">
-        <!-- Detalhe das Vendas -->
-        <div class="table-column">
-            <h2>Detalhe das vendas</h2>
-            <table>
-                <tr>
-                    <th>Código da Venda</th>
-                    <th>Produto</th>
-                    <th>Qtd</th>
-                    <th>Valor total</th>
-                    <th>Valid</th>
-                    <th>Fabricação</th>
-                    <th>Funcionário</th>
-                    <th>Cliente</th>
-                    <th>CPF Cliente</th>
-                </tr>
-                <tr>
-                    <td>201</td>
-                    <td>Doce de Leite</td>
-                    <td>30</td>
-                    <td>749,7</td>
-                    <td>20/11/24</td>
-                    <td>24/05/24</td>
-                    <td>Rogerio</td>
-                    <td>Alexandre</td>
-                    <td>015.474.21 05</td>
-                </tr>
-                <tr>
-                    <td>202</td>
-                    <td>Doce de Leite</td>
-                    <td>15</td>
-                    <td>374,85</td>
-                    <td>20/11/24</td>
-                    <td>24/05/24</td>
-                    <td>Rogerio</td>
-                    <td>Alexandre</td>
-                    <td>283.183.63 05</td>
-                </tr>
-            </table>
-        </div>
-        
-        <!-- Produtos Disponíveis -->
-        <div class="table-column">
-            <h2>Produtos disponíveis</h2>
-            <table>
-                <tr>
-                    <th>Código do produto</th>
-                    <th>Produto</th>
-                    <th>Unid</th>
-                    <th>Estoque</th>
-                    <th>Preço</th>
-                    <th>Temp. Ideal</th>
-                    <th>Obs(Cuidados)</th>
-                    <th>Validade</th>
-                    <th>Fabricação</th>
-                </tr>
-                <tr>
-                    <td>1</td>
-                    <td>Doce de Leite</td>
-                    <td>350g</td>
-                    <td>300</td>
-                    <td>24,99</td>
-                    <td>20°C</td>
-                    <td>Armazenar em Recipiente Hermético. Após aberto, dura de duas a quatro semanas.</td>
-                    <td>20/11/2024</td>
-                    <td>24/05/2024</td>
-                </tr>
-                <tr>
-                    <td>2</td>
-                    <td>Doce de Leite</td>
-                    <td>800g</td>
-                    <td>150</td>
-                    <td>59,99</td>
-                    <td>20°C</td>
-                    <td>Armazenar em Recipiente Hermético. Após aberto, dura de duas a quatro semanas.</td>
-                    <td>20/11/2024</td>
-                    <td>24/05/2024</td>
-                </tr>
-            </table>
-        </div>
-    </div>
-</div>
-
 </body>
 </html>

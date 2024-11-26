@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastro de Funcionários</title>
+    <link rel="stylesheet" href="styleregistroprodutos.css">
+</head>
+<body>
+<div class="container">
+    <h1>Cadastro de Funcionários</h1>
+
+    <div class="split-section">
+        <!-- Formulário de Cadastro -->
+        <div class="form-section">
+            <h2>Cadastrar Funcionário</h2>
+            <label for="codigo-funcionario">Código do Funcionário:</label>
+            <input type="text" id="codigo-funcionario" readonly>
+
+            <label for="tipo-pessoa">Tipo de Pessoa:</label>
+            <select id="tipo-pessoa">
+                <option value="CPF">CPF</option>
+                <option value="CNPJ">CNPJ</option>
+            </select>
+
+            <label for="nome-funcionario">Nome:</label>
+            <input type="text" id="nome-funcionario">
+
+            <label for="sexo-funcionario">Sexo:</label>
+            <select id="sexo-funcionario">
+                <option value="Masculino">Masculino</option>
+                <option value="Feminino">Feminino</option>
+                <option value="Nenhum">Nenhum</option>
+                <option value="Outros">Outros</option>
+            </select>
+
+            <label for="email-funcionario">E-mail:</label>
+            <input type="text" id="email-funcionario">
+
+            <label for="telefone1-funcionario">Telefone 1:</label>
+            <input type="text" id="telefone1-funcionario">
+
+            <label for="telefone2-funcionario">Telefone 2:</label>
+            <input type="text" id="telefone2-funcionario">
+
+            <label for="data-cadastro">Data do Cadastro:</label>
+            <input type="date" id="data-cadastro">
+
+            <label for="observacoes">Observações:</label>
+            <input type="text" id="observacoes">
+
+            <div class="buttons-container">
+                <a href="inicial.html"><button id="btn-voltar">Voltar</button></a>
+                <button id="btn-limpar-funcionario">Limpar</button>
+                <button id="btn-gravar-funcionario">Gravar</button>
+            </div>
+        </div>
+
+        <!-- Tabela de Funcionários -->
+        <div class="table-section">
+            <h2>Funcionários Cadastrados</h2>
+            <table id="tabela-funcionarios">
+                <thead>
+                <tr>
+                    <th>Código</th>
+                    <th>Tipo</th>
+                    <th>Nome</th>
+                    <th>Sexo</th>
+                    <th>Email</th>
+                    <th>Telefone 1</th>
+                    <th>Telefone 2</th>
+                    <th>Data</th>
+                    <th>Observações</th>
+                    <th>Ações</th>
+                </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+<script src="scriptcadastrofuncionario.js"></script>
+</body>
+</html>

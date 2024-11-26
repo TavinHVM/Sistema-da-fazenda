@@ -2,7 +2,7 @@ function cadastrar() {
     window.location.href = 'cadastro.html';
 }
 
-function registrarVendas() {
+function registrar() {
     window.location.href = 'registro.html';
 }
 

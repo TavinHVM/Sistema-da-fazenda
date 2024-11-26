@@ -1,122 +1,101 @@
 <?php
-$jsonFile = 'dados.json';
+header('Content-Type: application/json');
 
-// Define o método da requisição
-$method = $_SERVER['REQUEST_METHOD'];
+// Caminhos dos arquivos JSON
+$clientesJson = 'clientes.json';
+$produtosJson = 'produtos.json';
+$funcionariosJson = 'funcionarios.json';
 
-// Cria o arquivo JSON vazio se não existir
-if (!file_exists($jsonFile)) {
-    file_put_contents($jsonFile, '[]');
-}
-
-// Lê os dados do arquivo JSON
-$data = json_decode(file_get_contents($jsonFile), true);
-
-// Função para salvar os dados no arquivo
-function saveData($data, $file) {
-    file_put_contents($file, json_encode($data, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE));
-}
-
-// Função para validar os dados obrigatórios
-function validateData($input) {
-    $requiredFields = ['cpf_cnpj', 'nome', 'grupo', 'dt_nasc', 'sexo', 'estado_civil', 'email', 'tipo_doc', 'numero', 'orgao_exped', 'uf', 'dt_emissao'];
-    foreach ($requiredFields as $field) {
-        if (empty($input[$field])) {
-            return "O campo {$field} é obrigatório.";
-        }
+// Função para ler os dados do JSON
+function lerJson($caminho) {
+    if (!file_exists($caminho)) {
+        return [];
     }
-    return true;
+    return json_decode(file_get_contents($caminho), true) ?: [];
 }
 
-switch ($method) {
-    case 'GET':
-        // Verifica se o código foi passado na URL para retornar apenas aquele cliente
-        if (isset($_GET['codigo'])) {
-            $codigo = $_GET['codigo'];
-            // Busca o cliente específico pelo código
-            $cliente = array_filter($data, function($item) use ($codigo) {
-                return $item['codigo'] == $codigo;
-            });
-            $cliente = array_values($cliente);  // Reindexa o array
-            if (count($cliente) > 0) {
-                echo json_encode($cliente[0]);  // Retorna o cliente encontrado
-            } else {
-                echo json_encode(["status" => "Erro", "message" => "Cliente não encontrado"]);
-            }
-        } else {
-            // Retorna todos os dados em formato JSON
-            header('Content-Type: application/json');
-            echo json_encode($data);
-        }
+// Função para salvar dados no JSON
+function salvarJson($caminho, $dados) {
+    file_put_contents($caminho, json_encode($dados, JSON_PRETTY_PRINT));
+}
+
+// Identificação do endpoint
+$endpoint = $_GET['endpoint'] ?? null;
+
+// Determinação do caminho do arquivo JSON baseado no endpoint
+switch ($endpoint) {
+    case 'clientes':
+        $jsonPath = $clientesJson;
         break;
+    case 'produtos':
+        $jsonPath = $produtosJson;
+        break;
+    case 'funcionarios':
+        $jsonPath = $funcionariosJson;
+        break;
+    default:
+        http_response_code(404);
+        echo json_encode(['message' => 'Endpoint não encontrado.']);
+        exit;
+}
 
+// Leitura dos dados do arquivo JSON correspondente
+$dados = lerJson($jsonPath);
+
+switch ($_SERVER['REQUEST_METHOD']) {
     case 'POST':
-        // Lê os dados enviados pelo formulário
+        // Receber os dados enviados
         $input = json_decode(file_get_contents('php://input'), true);
+        $atualizado = false;
 
-        // Verifica se é uma atualização (código existente)
-        if (!empty($input['codigo'])) {
-            foreach ($data as &$item) {
+        // Atualização de um registro existente
+        if (isset($input['codigo'])) {
+            foreach ($dados as &$item) {
                 if ($item['codigo'] == $input['codigo']) {
-                    $item = array_merge($item, $input);
-                    saveData($data, $jsonFile);
-                    header('Content-Type: application/json');
-                    echo json_encode(["status" => "Dados atualizados com sucesso"]);
-                    exit;
+                    $item = $input; // Atualiza o registro
+                    $atualizado = true;
+                    break;
                 }
             }
         }
 
-        // Caso contrário, trata como criação de novo registro
-        $nextCode = count($data) > 0 ? max(array_column($data, 'codigo')) + 1 : 1;
-        $input['codigo'] = $nextCode;
-
-        // Valida os dados obrigatórios
-        $validationResult = validateData($input);
-        if ($validationResult !== true) {
-            header('Content-Type: application/json', true, 400);
-            echo json_encode(["status" => "Erro", "message" => $validationResult]);
-            exit;
+        // Criação de um novo registro
+        if (!$atualizado) {
+            $input['codigo'] = count($dados) + 1;
+            $dados[] = $input;
         }
 
-        // Adiciona o novo cliente ao array de dados
-        $data[] = $input;
+        salvarJson($jsonPath, $dados);
+        echo json_encode(['message' => $atualizado ? 'Atualizado com sucesso.' : 'Criado com sucesso.']);
+        break;
 
-        // Salva os dados no arquivo
-        saveData($data, $jsonFile);
-        header('Content-Type: application/json');
-        echo json_encode(["status" => "Dados gravados com sucesso"]);
+    case 'GET':
+        // Retornar todos os registros
+        echo json_encode($dados);
         break;
 
     case 'DELETE':
-        // Lê os dados enviados para exclusão
+        // Receber os dados enviados
         $input = json_decode(file_get_contents('php://input'), true);
+        $codigoExcluir = $input['codigo'] ?? null;
 
-        // Verifica se o código foi enviado
-        if (empty($input['codigo'])) {
-            header('Content-Type: application/json', true, 400);
-            echo json_encode(["status" => "Erro", "message" => "Código não enviado"]);
+        if (!$codigoExcluir) {
+            echo json_encode(['message' => 'Código não fornecido.']);
+            http_response_code(400);
             exit;
         }
 
-        // Filtra os dados removendo o cliente pelo código
-        $data = array_filter($data, function($item) use ($input) {
-            return $item['codigo'] != $input['codigo'];
+        // Filtrar os registros para excluir o solicitado
+        $dados = array_filter($dados, function ($item) use ($codigoExcluir) {
+            return $item['codigo'] != $codigoExcluir;
         });
 
-        // Reindexa o array para garantir uma numeração contínua
-        $data = array_values($data);
-
-        // Salva os dados atualizados no arquivo
-        saveData($data, $jsonFile);
-        header('Content-Type: application/json');
-        echo json_encode(["status" => "Dados excluídos com sucesso"]);
+        salvarJson($jsonPath, array_values($dados));
+        echo json_encode(['message' => 'Excluído com sucesso.']);
         break;
 
     default:
-        // Método não permitido
-        http_response_code(405);
-        header('Content-Type: application/json');
-        echo json_encode(["status" => "Método não permitido"]);
+        http_response_code(405); // Método não permitido
+        echo json_encode(['message' => 'Método não permitido.']);
 }
 ?>
