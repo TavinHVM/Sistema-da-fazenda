@@ -1,16 +1,30 @@
-function cadastrar() {
-    window.location.href = 'cadastro.html';
-}
+document.addEventListener("DOMContentLoaded", function () {
+    const usuario = JSON.parse(sessionStorage.getItem("usuarioLogado"));
 
-function registrar() {
-    window.location.href = 'registro.html';
-}
+    if (!usuario) {
+        alert("Você precisa estar logado para acessar o sistema.");
+        window.location.href = "index.html";
+    }
 
-function feedback() {
-    window.location.href = 'feedback.html';
-}
+    window.cadastrar = function () {
+        if (usuario.tipo === "funcionario") {
+            alert("Funcionários não têm acesso ao cadastro de funcionários.");
+        } else {
+            window.location.href = "cadastro.html";
+        }
+    };
 
-function sair() {
-    alert("Saindo do sistema...");
-    window.location.href = 'index.html';
-}
+    window.registrar = function () {
+        window.location.href = "registro.html";
+    };
+
+    window.feedback = function () {
+        window.location.href = "feedback.html";
+    };
+
+    window.sair = function () {
+        sessionStorage.removeItem("usuarioLogado");
+        alert("Saindo do sistema...");
+        window.location.href = "index.html";
+    };
+});

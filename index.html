@@ -8,15 +8,17 @@
 <body>
     <div class="container">
         <h1>Sistema da Fazenda</h1>
-        <form action="inicial.html">
+        <form id="login-form">
             <label for="login">Login:</label>
-            <input type="text" id="login" name="login">
+            <input type="text" id="login" name="login" required>
             
             <label for="senha">Senha:</label>
-            <input type="password" id="senha" name="senha">
+            <input type="password" id="senha" name="senha" required>
             
             <button type="submit">Login</button>
         </form>
+        <p id="login-erro" style="color: red; display: none;">Login ou senha incorretos!</p>
     </div>
+    <script src="scriptlogin.js"></script>
 </body>
 </html>
