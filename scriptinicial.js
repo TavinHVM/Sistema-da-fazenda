@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {
         if (usuario.tipo === "funcionario") {
             alert("Funcionários não têm acesso ao cadastro de funcionários.");
         } else {
-            window.location.href = "cadastro.html";
+            window.location.href = "cadastrofuncionarios.html";
         }
     };
 
