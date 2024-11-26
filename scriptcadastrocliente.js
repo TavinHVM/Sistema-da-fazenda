@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const urlBase = 'dados-api.php';
     const clienteElements = {
         codigo: document.getElementById('codigo-cliente'),
-        tipo: document.getElementById('tipo-pessoa'),
+        cpfCnpj: document.getElementById('cpf-cnpj-cliente'),
         nome: document.getElementById('nome-cliente'),
         sexo: document.getElementById('sexo-cliente'),
         email: document.getElementById('email-cliente'),
@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     function limparCampos() {
         clienteElements.codigo.value = '';
-        clienteElements.tipo.value = 'CPF';
+        clienteElements.cpfCnpj.value = '';
         clienteElements.nome.value = '';
         clienteElements.sexo.value = 'Masculino';
         clienteElements.email.value = '';
@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     const tr = document.createElement('tr');
                     tr.innerHTML = `
                         <td>${cliente.codigo}</td>
-                        <td>${cliente.tipo}</td>
+                        <td>${cliente.cpfCnpj}</td>
                         <td>${cliente.nome}</td>
                         <td>${cliente.sexo}</td>
                         <td>${cliente.email}</td>
@@ -68,7 +68,7 @@ document.addEventListener("DOMContentLoaded", function () {
             .then(clientes => {
                 const cliente = clientes.find(c => c.codigo == clienteId);
                 clienteElements.codigo.value = cliente.codigo;
-                clienteElements.tipo.value = cliente.tipo;
+                clienteElements.cpfCnpj.value = cliente.cpfCnpj;
                 clienteElements.nome.value = cliente.nome;
                 clienteElements.sexo.value = cliente.sexo;
                 clienteElements.email.value = cliente.email;
@@ -98,7 +98,7 @@ document.addEventListener("DOMContentLoaded", function () {
     document.getElementById('btn-gravar-cliente').addEventListener('click', () => {
         const cliente = {
             codigo: clienteElements.codigo.value || null,
-            tipo: clienteElements.tipo.value,
+            cpfCnpj: clienteElements.cpfCnpj.value,
             nome: clienteElements.nome.value,
             sexo: clienteElements.sexo.value,
             email: clienteElements.email.value,

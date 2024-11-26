@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const urlBase = 'dados-api.php';
     const funcionarioElements = {
         codigo: document.getElementById('codigo-funcionario'),
-        tipo: document.getElementById('tipo-pessoa'),
+        cpfCnpj: document.getElementById('cpf-cnpj-funcionario'),
         nome: document.getElementById('nome-funcionario'),
         sexo: document.getElementById('sexo-funcionario'),
         email: document.getElementById('email-funcionario'),
@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     function limparCampos() {
         funcionarioElements.codigo.value = '';
-        funcionarioElements.tipo.value = 'CPF';
+        funcionarioElements.cpfCnpj.value = '';
         funcionarioElements.nome.value = '';
         funcionarioElements.sexo.value = 'Masculino';
         funcionarioElements.email.value = '';
@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     const tr = document.createElement('tr');
                     tr.innerHTML = `
                         <td>${funcionario.codigo}</td>
-                        <td>${funcionario.tipo}</td>
+                        <td>${funcionario.cpfCnpj}</td>
                         <td>${funcionario.nome}</td>
                         <td>${funcionario.sexo}</td>
                         <td>${funcionario.email}</td>
@@ -68,7 +68,7 @@ document.addEventListener("DOMContentLoaded", function () {
             .then(funcionarios => {
                 const funcionario = funcionarios.find(f => f.codigo == funcionarioId);
                 funcionarioElements.codigo.value = funcionario.codigo;
-                funcionarioElements.tipo.value = funcionario.tipo;
+                funcionarioElements.cpfCnpj.value = funcionario.cpfCnpj;
                 funcionarioElements.nome.value = funcionario.nome;
                 funcionarioElements.sexo.value = funcionario.sexo;
                 funcionarioElements.email.value = funcionario.email;
@@ -98,7 +98,7 @@ document.addEventListener("DOMContentLoaded", function () {
     document.getElementById('btn-gravar-funcionario').addEventListener('click', () => {
         const funcionario = {
             codigo: funcionarioElements.codigo.value || null,
-            tipo: funcionarioElements.tipo.value,
+            cpfCnpj: funcionarioElements.cpfCnpj.value,
             nome: funcionarioElements.nome.value,
             sexo: funcionarioElements.sexo.value,
             email: funcionarioElements.email.value,
