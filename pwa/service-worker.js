@@ -1,12 +1,12 @@
-const CACHE_NAME = 'pwa-static-cache-v1.0.2';
+const CACHE_NAME = 'fazenda-static-cache-v1.0.3';
 
 const urlsToCache = [
-    'pwa.html',
-    'offline.html',
-    'manifest.json',
     'favicon.ico',
     'icon-192x192.png',
-    'icon-512x512.png'
+    'icon-512x512.png',
+    'index.html',
+    'manifest.json',
+    'offline.html'
 ];
 
 self.addEventListener('install', event => {
