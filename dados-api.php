@@ -6,6 +6,7 @@ $clientesJson = 'clientes.json';
 $produtosJson = 'produtos.json';
 $funcionariosJson = 'funcionarios.json';
 $vendasJson = 'vendas.json';
+$fornecedoresJson = 'fornecedores.json';
 
 // Função para ler os dados do JSON
 function lerJson($caminho) {
@@ -36,6 +37,9 @@ switch ($endpoint) {
         break;
     case 'vendas':
         $jsonPath = $vendasJson;
+        break;
+    case 'fornecedores':
+        $jsonPath = $fornecedoresJson;
         break;
     default:
         http_response_code(404);
