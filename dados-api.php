@@ -5,6 +5,7 @@ header('Content-Type: application/json');
 $clientesJson = 'clientes.json';
 $produtosJson = 'produtos.json';
 $funcionariosJson = 'funcionarios.json';
+$vendasJson = 'vendas.json';
 
 // Função para ler os dados do JSON
 function lerJson($caminho) {
@@ -32,6 +33,9 @@ switch ($endpoint) {
         break;
     case 'funcionarios':
         $jsonPath = $funcionariosJson;
+        break;
+    case 'vendas':
+        $jsonPath = $vendasJson;
         break;
     default:
         http_response_code(404);

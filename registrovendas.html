@@ -1,0 +1,77 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Registro de Vendas</title>
+    <link rel="stylesheet" href="styleregistrovendas.css">
+</head>
+<body>
+<div class="container">
+    <h1>Registro de Vendas</h1>
+
+    <div class="split-section">
+        <!-- Formulário de Registro -->
+        <div class="form-section">
+            <h2>Registrar Venda</h2>
+            <label for="codigo-venda">Código da Venda:</label>
+            <input type="text" id="codigo-venda" readonly>
+
+            <label for="cliente-venda">Cliente:</label>
+            <button id="cliente-venda" class="dropdown-btn">Selecionar Cliente</button>
+            <ul id="lista-clientes" class="dropdown-list"></ul>
+
+            <label for="funcionario-venda">Funcionário:</label>
+            <button id="funcionario-venda" class="dropdown-btn">Selecionar Funcionário</button>
+            <ul id="lista-funcionarios" class="dropdown-list"></ul>
+
+            <label for="produto-venda">Produto:</label>
+            <button id="produto-venda" class="dropdown-btn">Selecionar Produto</button>
+            <ul id="lista-produtos" class="dropdown-list"></ul>
+
+            <label for="quantidade-venda">Quantidade:</label>
+            <input type="number" id="quantidade-venda">
+
+            <label for="preco-unitario">Preço Unitário:</label>
+            <input type="text" id="preco-unitario" readonly>
+
+            <label for="data-venda">Data da Venda:</label>
+            <input type="date" id="data-venda">
+
+            <label for="observacoes">Observações:</label>
+            <input type="text" id="observacoes">
+
+            <div class="buttons-container">
+                <a href="registro.html"><button id="btn-voltar">Voltar</button></a>
+                <button id="btn-limpar-venda">Limpar</button>
+                <button id="btn-gravar-venda">Gravar</button>
+            </div>
+        </div>
+
+        <!-- Tabela de Vendas -->
+        <div class="table-section">
+            <h2>Histórico de Vendas</h2>
+            <table id="tabela-vendas">
+                <thead>
+                <tr>
+                    <th>Código</th>
+                    <th>Cliente</th>
+                    <th>Funcionário</th>
+                    <th>Produto</th>
+                    <th>Quantidade</th>
+                    <th>Preço Unitário</th>
+                    <th>Total</th>
+                    <th>Data</th>
+                    <th>Observações</th>
+                    <th>Ações</th>
+                </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+<script src="scriptregistrovendas.js"></script>
+</body>
+</html>
