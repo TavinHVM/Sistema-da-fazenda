@@ -18,6 +18,10 @@ document.addEventListener("DOMContentLoaded", function () {
         window.location.href = "feedback.html";
     };
 
+    window.manual = function(){
+        window.location.href = "manual.html";
+    };
+
     window.sair = function () {
         sessionStorage.removeItem("usuarioLogado");
         alert("Saindo do sistema...");

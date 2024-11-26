@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manual de Uso - Sistema da Fazenda</title>
+    <link rel="stylesheet" href="stylefeedback.css">
+    <style>
+        /* Estilo adicional para o botão de voltar */
+        .back-button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #0066cc;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            text-align: center;
+        }
+        .back-button:hover {
+            background-color: #0055a3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Manual de Uso do Sistema da Fazenda</h1>
+        </div>
+        <div class="content">
+            <h2>Introdução</h2>
+            <p>O Sistema da Fazenda foi desenvolvido para gerenciar de forma eficiente as operações de registro e controle de clientes, funcionários, fornecedores e vendas de uma fazenda. Este manual tem como objetivo orientar o usuário sobre o uso das funcionalidades do sistema, incluindo o acesso ao sistema, cadastro de informações e controle de permissões baseado no tipo de usuário.</p>
+
+            <h2>Objetivos do Sistema</h2>
+            <ul>
+                <li>Cadastro de clientes, funcionários e fornecedores.</li>
+                <li>Registro de vendas e produtos.</li>
+                <li>Controle de acesso baseado em login (admin ou funcionário).</li>
+                <li>Permissões diferenciadas para cada tipo de usuário.</li>
+            </ul>
+
+            <h2>Pré-requisitos de Uso</h2>
+            <ul>
+                <li>Dispositivo com acesso à internet e navegador atualizado.</li>
+                <li>Credenciais de acesso ao sistema:
+                    <ul>
+                        <li><strong>Admin:</strong> login: <code>admin</code>, senha: <code>adminadmin</code>.</li>
+                        <li><strong>Funcionário:</strong> login: <code>funcionario</code>, senha: <code>fazendafuncionario</code>.</li>
+                    </ul>
+                </li>
+            </ul>
+
+            <h2>Funcionalidades do Sistema</h2>
+
+            <h3>1. Tela de Login</h3>
+            <p>Ao acessar o sistema, a primeira tela apresentada é a de login, onde o usuário deve inserir suas credenciais para acessar as funcionalidades correspondentes ao seu perfil.</p>
+            <ol>
+                <li>Insira o login no campo "Login".</li>
+                <li>Insira a senha no campo "Senha".</li>
+                <li>Clique no botão "Login".</li>
+            </ol>
+            <p>Dependendo das credenciais fornecidas, o usuário será redirecionado para a tela inicial com permissões específicas:</p>
+            <ul>
+                <li><strong>Admin:</strong> acesso completo ao sistema.</li>
+                <li><strong>Funcionário:</strong> acesso restrito, sem permissão para acessar o cadastro de funcionários.</li>
+            </ul>
+
+            <h3>2. Tela Inicial</h3>
+            <p>Após o login, o usuário é direcionado para a tela inicial, que apresenta as seguintes opções:</p>
+            <ul>
+                <li><strong>Cadastros:</strong> permite o acesso aos módulos de cadastro de clientes, funcionários e fornecedores.</li>
+                <li><strong>Registro de Vendas e Produtos:</strong> direciona para as telas de registro de vendas e controle de estoque.</li>
+                <li><strong>Feedback:</strong> (futuro módulo para controle de satisfação).</li>
+                <li><strong>Manual de Uso:</strong> acessa este manual de instruções.</li>
+                <li><strong>Sair:</strong> desloga o usuário e retorna à tela de login.</li>
+            </ul>
+
+            <h3>3. Tela de Cadastros</h3>
+            <p>Na seção de cadastros, o usuário pode gerenciar informações de clientes, funcionários e fornecedores. As permissões variam conforme o perfil:</p>
+            <ul>
+                <li><strong>Admin:</strong> acesso total a todas as opções de cadastro.</li>
+                <li><strong>Funcionário:</strong> acesso restrito, sem permissão para cadastrar funcionários.</li>
+            </ul>
+            <p>Para realizar um cadastro:</p>
+            <ol>
+                <li>Clique no botão correspondente ao cadastro desejado (Clientes, Funcionários ou Fornecedores).</li>
+                <li>Preencha os campos obrigatórios com as informações solicitadas.</li>
+                <li>Clique em "Gravar" para salvar ou "Limpar" para resetar os campos.</li>
+            </ol>
+
+            <h3>4. Tela de Registro de Vendas</h3>
+            <p>Esta tela permite o registro e controle de vendas realizadas. Para registrar uma venda:</p>
+            <ol>
+                <li>Clique em "Registro de Vendas e Produtos" na tela inicial.</li>
+                <li>Preencha os dados da venda, como cliente, funcionário responsável, produto, quantidade e valor.</li>
+                <li>Clique em "Gravar" para salvar a venda.</li>
+            </ol>
+
+            <h3>5. Controle de Permissões</h3>
+            <p>O sistema possui controle de permissões baseado no tipo de usuário:</p>
+            <ul>
+                <li><strong>Admin:</strong> pode acessar todas as telas do sistema e realizar todas as operações.</li>
+                <li><strong>Funcionário:</strong> possui restrições, como:
+                    <ul>
+                        <li>Não pode acessar a tela de cadastro de funcionários.</li>
+                        <li>Não pode realizar operações administrativas.</li>
+                    </ul>
+                </li>
+            </ul>
+
+            <h2>Conclusão</h2>
+            <p>O Sistema da Fazenda foi desenvolvido para otimizar as operações administrativas e comerciais, garantindo controle e eficiência. Com funcionalidades acessíveis e diferenciadas para administradores e funcionários, o sistema é uma ferramenta robusta para atender às necessidades de gerenciamento.</p>
+
+            <a href="inicial.html" class="back-button">Voltar</a>
+        </div>
+    </div>
+</body>
+</html>
