@@ -1,1 +1,202 @@
-[]
+[
+    {
+        "codigo": 2,
+        "cliente": "12",
+        "funcionario": "3",
+        "produto": "8",
+        "quantidade": 5,
+        "precoUnitario": 17,
+        "data": "2024-11-24",
+        "observacoes": "Entregar na sede de Winterfell"
+    },
+    {
+        "codigo": 3,
+        "cliente": "27",
+        "funcionario": "8",
+        "produto": "14",
+        "quantidade": 2,
+        "precoUnitario": 12,
+        "data": "2024-11-23",
+        "observacoes": "Cliente pediu embalagem especial"
+    },
+    {
+        "codigo": 4,
+        "cliente": "10",
+        "funcionario": "4",
+        "produto": "22",
+        "quantidade": 3,
+        "precoUnitario": 15,
+        "data": "2024-11-22",
+        "observacoes": "Pagamento via transfer\u00eancia banc\u00e1ria"
+    },
+    {
+        "codigo": 5,
+        "cliente": "5",
+        "funcionario": "7",
+        "produto": "7",
+        "quantidade": 8,
+        "precoUnitario": 19,
+        "data": "2024-11-21",
+        "observacoes": "Cliente especificou que adora chocolate"
+    },
+    {
+        "codigo": 6,
+        "cliente": "18",
+        "funcionario": "2",
+        "produto": "17",
+        "quantidade": 6,
+        "precoUnitario": 19,
+        "data": "2024-11-20",
+        "observacoes": "Entrega em local confidencial"
+    },
+    {
+        "codigo": 7,
+        "cliente": "30",
+        "funcionario": "1",
+        "produto": "9",
+        "quantidade": 12,
+        "precoUnitario": 18,
+        "data": "2024-11-19",
+        "observacoes": "Pedido para festa de anivers\u00e1rio"
+    },
+    {
+        "codigo": 8,
+        "cliente": "22",
+        "funcionario": "9",
+        "produto": "19",
+        "quantidade": 4,
+        "precoUnitario": 20,
+        "data": "2024-11-18",
+        "observacoes": "Entrega no escrit\u00f3rio"
+    },
+    {
+        "codigo": 9,
+        "cliente": "34",
+        "funcionario": "5",
+        "produto": "5",
+        "quantidade": 1,
+        "precoUnitario": 15,
+        "data": "2024-11-17",
+        "observacoes": "Pedido pequeno, cliente em teste"
+    },
+    {
+        "codigo": 10,
+        "cliente": "8",
+        "funcionario": "10",
+        "produto": "23",
+        "quantidade": 7,
+        "precoUnitario": 21,
+        "data": "2024-11-16",
+        "observacoes": "Cliente pediu urg\u00eancia"
+    },
+    {
+        "codigo": 11,
+        "cliente": "20",
+        "funcionario": "4",
+        "produto": "2",
+        "quantidade": 3,
+        "precoUnitario": 14,
+        "data": "2024-11-15",
+        "observacoes": "Entrega na zona rural"
+    },
+    {
+        "codigo": 12,
+        "cliente": "14",
+        "funcionario": "3",
+        "produto": "26",
+        "quantidade": 2,
+        "precoUnitario": 20,
+        "data": "2024-11-14",
+        "observacoes": "Cliente pediu embalagem discreta"
+    },
+    {
+        "codigo": 13,
+        "cliente": "21",
+        "funcionario": "6",
+        "produto": "18",
+        "quantidade": 9,
+        "precoUnitario": 15,
+        "data": "2024-11-13",
+        "observacoes": "Doce com raspas de lim\u00e3o, cliente destacou prefer\u00eancia"
+    },
+    {
+        "codigo": 14,
+        "cliente": "25",
+        "funcionario": "5",
+        "produto": "13",
+        "quantidade": 5,
+        "precoUnitario": 14,
+        "data": "2024-11-12",
+        "observacoes": "Cliente pediu embalagem para presente"
+    },
+    {
+        "codigo": 15,
+        "cliente": "31",
+        "funcionario": "2",
+        "produto": "28",
+        "quantidade": 3,
+        "precoUnitario": 19,
+        "data": "2024-11-11",
+        "observacoes": "Entrega no hospital"
+    },
+    {
+        "codigo": 16,
+        "cliente": "19",
+        "funcionario": "8",
+        "produto": "15",
+        "quantidade": 6,
+        "precoUnitario": 18,
+        "data": "2024-11-10",
+        "observacoes": "Pedido para evento corporativo"
+    },
+    {
+        "codigo": 17,
+        "cliente": "35",
+        "funcionario": "7",
+        "produto": "27",
+        "quantidade": 4,
+        "precoUnitario": 17,
+        "data": "2024-11-09",
+        "observacoes": "Doce de leite com queijo, cliente pediu frescor"
+    },
+    {
+        "codigo": 18,
+        "cliente": "13",
+        "funcionario": "9",
+        "produto": "24",
+        "quantidade": 2,
+        "precoUnitario": 19,
+        "data": "2024-11-08",
+        "observacoes": "Entrega para um presente surpresa"
+    },
+    {
+        "codigo": 18,
+        "cliente": "17",
+        "funcionario": "4",
+        "produto": "5",
+        "quantidade": 50,
+        "precoUnitario": 15,
+        "data": "2024-11-26",
+        "observacoes": "Entregar na recep\u00e7\u00e3o"
+    },
+    {
+        "codigo": 19,
+        "cliente": "12",
+        "funcionario": "3",
+        "produto": "8",
+        "quantidade": 5,
+        "precoUnitario": 17,
+        "data": "2024-11-24",
+        "observacoes": "Entregar na sede de Winterfell"
+    },
+    {
+        "codigo": 20,
+        "cliente": "12",
+        "funcionario": "3",
+        "produto": "8",
+        "quantidade": 5,
+        "precoUnitario": 17,
+        "data": "2024-11-24",
+        "observacoes": "Entregar na sede de Winterfell"
+    }
+]

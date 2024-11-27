@@ -1,1 +1,12 @@
-[]
+[
+    {
+        "codigo": "1",
+        "nome": "Embalagens do Silva",
+        "cpfCnpj": "123345545645",
+        "telefone": "(62)99887766",
+        "email": "embalagens@dosilca.com",
+        "endereco": "Rua da frente, 123",
+        "itemFornecido": "Embalagens de vidro e sacos pl\u00e1sticos",
+        "observacoes": "Entrega \u00e0 tarde, no mesmo dia"
+    }
+]

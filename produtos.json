@@ -1,1 +1,272 @@
-[]
+[
+    {
+        "codigo": "1",
+        "nome": "Doce de Leite Casadinho em pedaços",
+        "unidade": "200g",
+        "estoque": "300",
+        "preco": "14,90",
+        "temperaturaIdeal": "15",
+        "observacoes": "Doce de leite casadinho em pedaços, ideal para compartilhar em encontros ou como sobremesa rápida."
+    },
+    {
+        "codigo": "2",
+        "nome": "Doce de Leite Cremoso Tradicional",
+        "unidade": "400g",
+        "estoque": "150",
+        "preco": "18,90",
+        "temperaturaIdeal": "10",
+        "observacoes": "Cremoso e fácil de espalhar, perfeito para acompanhar torradas, pães e sobremesas."
+    },
+    {
+        "codigo": "3",
+        "nome": "Doce de Leite em Barra",
+        "unidade": "250g",
+        "estoque": "200",
+        "preco": "12,50",
+        "temperaturaIdeal": "18",
+        "observacoes": "Textura firme, ideal para cortar em pedaços e servir como sobremesa."
+    },
+    {
+        "codigo": "4",
+        "nome": "Doce de Leite com Coco",
+        "unidade": "300g",
+        "estoque": "100",
+        "preco": "16,90",
+        "temperaturaIdeal": "12",
+        "observacoes": "Combinação deliciosa de doce de leite com pedaços de coco ralado, proporcionando crocância e sabor tropical."
+    },
+    {
+        "codigo": "5",
+        "nome": "Doce de Leite com Café",
+        "unidade": "250g",
+        "estoque": "80",
+        "preco": "15,90",
+        "temperaturaIdeal": "15",
+        "observacoes": "A mistura perfeita de doce de leite e café, com um toque suave de amargor para amantes da bebida."
+    },
+    {
+        "codigo": "6",
+        "nome": "Doce de Leite Diet",
+        "unidade": "200g",
+        "estoque": "120",
+        "preco": "14,90",
+        "temperaturaIdeal": "10",
+        "observacoes": "Sem açúcar, mas com o mesmo sabor irresistível do doce de leite tradicional, ideal para quem segue dieta especial."
+    },
+    {
+        "codigo": "7",
+        "nome": "Doce de Leite com Chocolate",
+        "unidade": "400g",
+        "estoque": "50",
+        "preco": "19,90",
+        "temperaturaIdeal": "15",
+        "observacoes": "Camadas alternadas de doce de leite e chocolate, criando uma sobremesa perfeita para chocólatras."
+    },
+    {
+        "codigo": "8",
+        "nome": "Doce de Leite com Nozes",
+        "unidade": "300g",
+        "estoque": "70",
+        "preco": "17,50",
+        "temperaturaIdeal": "14",
+        "observacoes": "Sabor refinado, com nozes levemente crocantes misturadas ao doce de leite."
+    },
+    {
+        "codigo": "9",
+        "nome": "Doce de Leite Puro",
+        "unidade": "400g",
+        "estoque": "180",
+        "preco": "18,90",
+        "temperaturaIdeal": "12",
+        "observacoes": "Doce de leite na sua essência, sem misturas ou complementos, para os puristas do sabor."
+    },
+    {
+        "codigo": "10",
+        "nome": "Doce de Leite Artesanal",
+        "unidade": "250g",
+        "estoque": "130",
+        "preco": "16,90",
+        "temperaturaIdeal": "13",
+        "observacoes": "Produzido de forma artesanal, com leite fresco e açúcar mascavo, garantindo um sabor caseiro."
+    },
+    {
+        "codigo": "11",
+        "nome": "Doce de Leite com Amendoim",
+        "unidade": "300g",
+        "estoque": "60",
+        "preco": "15,90",
+        "temperaturaIdeal": "15",
+        "observacoes": "Textura crocante e sabor marcante, ideal para quem gosta de combinações únicas."
+    },
+    {
+        "codigo": "12",
+        "nome": "Doce de Leite Recheado com Goiabada",
+        "unidade": "350g",
+        "estoque": "90",
+        "preco": "17,90",
+        "temperaturaIdeal": "12",
+        "observacoes": "A clássica combinação de doce de leite com goiabada em uma versão recheada irresistível."
+    },
+    {
+        "codigo": "13",
+        "nome": "Doce de Leite com Baunilha",
+        "unidade": "200g",
+        "estoque": "70",
+        "preco": "14,90",
+        "temperaturaIdeal": "10",
+        "observacoes": "Toque de baunilha que suaviza e enriquece o sabor do doce de leite."
+    },
+    {
+        "codigo": "14",
+        "nome": "Doce de Leite em Pedaços Pequenos",
+        "unidade": "150g",
+        "estoque": "110",
+        "preco": "12,90",
+        "temperaturaIdeal": "18",
+        "observacoes": "Porções individuais práticas para consumo rápido ou como lanche."
+    },
+    {
+        "codigo": "15",
+        "nome": "Doce de Leite com Morango",
+        "unidade": "300g",
+        "estoque": "40",
+        "preco": "18,50",
+        "temperaturaIdeal": "8",
+        "observacoes": "Combinação deliciosa de doce de leite com pedaços de morango fresco."
+    },
+    {
+        "codigo": "16",
+        "nome": "Doce de Leite Sem Lactose",
+        "unidade": "250g",
+        "estoque": "50",
+        "preco": "16,90",
+        "temperaturaIdeal": "10",
+        "observacoes": "Opção especial para quem possui intolerância à lactose, mas não abre mão do sabor."
+    },
+    {
+        "codigo": "17",
+        "nome": "Doce de Leite com Frutas Secas",
+        "unidade": "350g",
+        "estoque": "60",
+        "preco": "19,90",
+        "temperaturaIdeal": "10",
+        "observacoes": "Mistura equilibrada de doce de leite com damasco e uva-passa."
+    },
+    {
+        "codigo": "18",
+        "nome": "Doce de Leite com Raspas de Limão",
+        "unidade": "200g",
+        "estoque": "80",
+        "preco": "15,90",
+        "temperaturaIdeal": "8",
+        "observacoes": "Toque cítrico e refrescante, ideal para sobremesas leves."
+    },
+    {
+        "codigo": "19",
+        "nome": "Doce de Leite com Amêndoas",
+        "unidade": "300g",
+        "estoque": "70",
+        "preco": "18,90",
+        "temperaturaIdeal": "12",
+        "observacoes": "Doce de leite com pedacinhos crocantes de amêndoas torradas."
+    },
+    {
+        "codigo": "20",
+        "nome": "Doce de Leite em Pote Pequeno",
+        "unidade": "100g",
+        "estoque": "200",
+        "preco": "7,90",
+        "temperaturaIdeal": "10",
+        "observacoes": "Porção prática e portátil para lanches rápidos."
+    },
+    {
+        "codigo": "21",
+        "nome": "Doce de Leite com Gengibre",
+        "unidade": "200g",
+        "estoque": "40",
+        "preco": "16,50",
+        "temperaturaIdeal": "12",
+        "observacoes": "Um toque levemente picante e aromático do gengibre, combinado com a suavidade do doce de leite."
+    },
+    {
+        "codigo": "22",
+        "nome": "Doce de Leite com Pimenta",
+        "unidade": "200g",
+        "estoque": "30",
+        "preco": "15,90",
+        "temperaturaIdeal": "10",
+        "observacoes": "Para os aventureiros do sabor, uma mistura única de doce e picante com leve ardência."
+    },
+    {
+        "codigo": "23",
+        "nome": "Doce de Leite com Flor de Sal",
+        "unidade": "250g",
+        "estoque": "50",
+        "preco": "17,90",
+        "temperaturaIdeal": "12",
+        "observacoes": "O contraste perfeito entre o doce cremoso e os cristais de flor de sal, realçando o sabor."
+    },
+    {
+        "codigo": "24",
+        "nome": "Doce de Leite com Matcha",
+        "unidade": "200g",
+        "estoque": "25",
+        "preco": "19,50",
+        "temperaturaIdeal": "8",
+        "observacoes": "A fusão do doce de leite com o sabor herbal do matcha, criando um equilíbrio exótico e refinado."
+    },
+    {
+        "codigo": "25",
+        "nome": "Doce de Leite com Laranja Cristalizada",
+        "unidade": "300g",
+        "estoque": "35",
+        "preco": "18,90",
+        "temperaturaIdeal": "12",
+        "observacoes": "Combinação cítrica e doce com pedaços de laranja cristalizada."
+    },
+    {
+        "codigo": "26",
+        "nome": "Doce de Leite com Lavanda",
+        "unidade": "200g",
+        "estoque": "20",
+        "preco": "20,90",
+        "temperaturaIdeal": "10",
+        "observacoes": "Uma experiência aromática e sofisticada, com o toque floral da lavanda."
+    },
+    {
+        "codigo": "27",
+        "nome": "Doce de Leite com Queijo",
+        "unidade": "300g",
+        "estoque": "60",
+        "preco": "17,90",
+        "temperaturaIdeal": "12",
+        "observacoes": "A combinação clássica de doce e salgado em uma única textura cremosa."
+    },
+    {
+        "codigo": "28",
+        "nome": "Doce de Leite com Alecrim",
+        "unidade": "200g",
+        "estoque": "15",
+        "preco": "19,50",
+        "temperaturaIdeal": "10",
+        "observacoes": "Sabor aromático com um toque herbal, perfeito para acompanhar sobremesas sofisticadas."
+    },
+    {
+        "codigo": "29",
+        "nome": "Doce de Leite com Rum",
+        "unidade": "250g",
+        "estoque": "40",
+        "preco": "21,90",
+        "temperaturaIdeal": "12",
+        "observacoes": "Doce de leite com um leve toque alcoólico, trazendo sofisticação ao sabor."
+    },
+    {
+        "codigo": "30",
+        "nome": "Doce de Leite com Açafrão",
+        "unidade": "200g",
+        "estoque": "10",
+        "preco": "22,90",
+        "temperaturaIdeal": "10",
+        "observacoes": "Uma combinação ousada que une o sabor marcante do açafrão com a suavidade do doce de leite."
+    }
+]

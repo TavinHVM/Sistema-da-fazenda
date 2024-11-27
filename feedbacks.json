@@ -1,1 +1,82 @@
-[]
+[
+    {
+        "nome": "Carlos Henrique",
+        "comentario": "Atendimento excelente! O doce de leite artesanal é incrível, superou minhas expectativas."
+    },
+    {
+        "nome": "Mariana Souza",
+        "comentario": "Adorei o atendimento! O produto chegou antes do prazo e em perfeitas condições."
+    },
+    {
+        "nome": "Roberta Almeida",
+        "comentario": "O atendimento foi impecável, e o doce de leite em pedaços é o melhor que já experimentei!"
+    },
+    {
+        "nome": "Lucas Pereira",
+        "comentario": "Ótimo serviço! Os produtos vieram bem embalados e o sabor é fantástico."
+    },
+    {
+        "nome": "Fernanda Costa",
+        "comentario": "Simplesmente amei o doce de leite com coco! Atendimento muito atencioso."
+    },
+    {
+        "nome": "Thiago Moura",
+        "comentario": "Fiquei impressionado com a rapidez e a qualidade do doce de leite tradicional."
+    },
+    {
+        "nome": "Camila Santos",
+        "comentario": "O doce de leite cremoso é maravilhoso! Atendimento também foi muito simpático."
+    },
+    {
+        "nome": "Rafael Lima",
+        "comentario": "Excelente! Desde o atendimento até a entrega. O doce de leite com café é divino!"
+    },
+    {
+        "nome": "Ana Clara",
+        "comentario": "Os produtos são de altíssima qualidade, e o atendimento foi muito prestativo."
+    },
+    {
+        "nome": "Bruno Ribeiro",
+        "comentario": "Muito satisfeito! O doce de leite diet é tão gostoso quanto o tradicional."
+    },
+    {
+        "nome": "Cláudia Martins",
+        "comentario": "Atendimento rápido e eficiente. O doce de leite recheado é uma delícia!"
+    },
+    {
+        "nome": "Juliana Oliveira",
+        "comentario": "O sabor do doce de leite puro é incrível, e o atendimento foi muito educado."
+    },
+    {
+        "nome": "Ricardo Fonseca",
+        "comentario": "Muito feliz com a compra! Produto maravilhoso e atendimento nota 10."
+    },
+    {
+        "nome": "Beatriz Nunes",
+        "comentario": "Adorei o doce de leite com baunilha. Atendimento impecável."
+    },
+    {
+        "nome": "Anônimo",
+        "comentario": "Produto excelente, sabor incrível. Atendimento foi muito bom."
+    },
+    {
+        "nome": "Anônimo",
+        "comentario": "Gostei muito da experiência. Doce de leite com nozes foi uma surpresa agradável."
+    },
+    {
+        "nome": "Anônimo",
+        "comentario": "Tudo ótimo! Doce de leite chegou rápido e em perfeito estado."
+    },
+    {
+        "nome": "José Silva",
+        "comentario": "Achei o atendimento razoável, poderia ter sido mais ágil."
+    },
+    {
+        "nome": "Renata Azevedo",
+        "comentario": "O produto é bom, mas demorou um pouco para chegar."
+    },
+    {
+        "nome": "Felipe Rocha",
+        "comentario": "Doce de leite saboroso, mas o atendimento foi apenas mediano."
+    }
+]

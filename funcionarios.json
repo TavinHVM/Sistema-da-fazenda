@@ -1,1 +1,123 @@
-[]
+[
+    {
+        "codigo": "1",
+        "cpfCnpj": "123.456.789-01",
+        "nome": "Fernanda Lima",
+        "sexo": "Feminino",
+        "email": "fernandalima@email.com",
+        "telefone1": "(11) 91234-5678",
+        "telefone2": "(15) 234-5678",
+        "data": "1985-03-10",
+        "observacoes": "Excelente desempenho em atendimento ao cliente."
+    },
+    {
+        "codigo": "2",
+        "cpfCnpj": "987.654.321-02",
+        "nome": "Joaquim Barbosa",
+        "sexo": "Masculino",
+        "email": "joaquimbarbosa@email.com",
+        "telefone1": "(21) 98765-4321",
+        "telefone2": "",
+        "data": "1954-10-07",
+        "observacoes": "Especialista em media\u00e7\u00e3o e resolu\u00e7\u00e3o de conflitos."
+    },
+    {
+        "codigo": "3",
+        "cpfCnpj": "345.678.901-11",
+        "nome": "Maria Aparecida Santos",
+        "sexo": "Feminino",
+        "email": "maria.santos@email.com",
+        "telefone1": "(31) 90000-1234",
+        "telefone2": "",
+        "data": "1990-06-18",
+        "observacoes": "Precisa melhorar no cumprimento de prazos."
+    },
+    {
+        "codigo": "4",
+        "cpfCnpj": "567.890.123-22",
+        "nome": "Pel\u00e9",
+        "sexo": "Masculino",
+        "email": "pele@futebol.com",
+        "telefone1": "(13) 98888-7766",
+        "telefone2": "",
+        "data": "1940-10-23",
+        "observacoes": "Motiva a equipe com sua experi\u00eancia e lideran\u00e7a."
+    },
+    {
+        "codigo": "5",
+        "cpfCnpj": "789.123.456-33",
+        "nome": "Ivete Sangalo",
+        "sexo": "Feminino",
+        "email": "ivete@sangalo.com",
+        "telefone1": "(71) 99999-8888",
+        "telefone2": "",
+        "data": "1972-05-27",
+        "observacoes": "Carism\u00e1tica, mas precisa trabalhar mais em gest\u00e3o de tempo."
+    },
+    {
+        "codigo": "6",
+        "cpfCnpj": "123.456.789-44",
+        "nome": "Bruce Wayne",
+        "sexo": "Masculino",
+        "email": "bruce.wayne@wayneindustries.com",
+        "telefone1": "(11) 91234-5678",
+        "telefone2": "",
+        "data": "1939-05-27",
+        "observacoes": "Altamente focado, mas pode ser excessivamente reservado."
+    },
+    {
+        "codigo": "7",
+        "cpfCnpj": "987.654.321-55",
+        "nome": "Sherlock Holmes",
+        "sexo": "Masculino",
+        "email": "sherlock@detectives.com",
+        "telefone1": "(21) 90000-1111",
+        "telefone2": "",
+        "data": "1854-01-06",
+        "observacoes": "Habilidade extraordin\u00e1ria em resolver problemas complexos."
+    },
+    {
+        "codigo": "8",
+        "cpfCnpj": "456.789.012-66",
+        "nome": "Tony Stark",
+        "sexo": "Masculino",
+        "email": "tony.stark@starkindustries.com",
+        "telefone1": "(11) 93456-7890",
+        "telefone2": "",
+        "data": "1970-05-29",
+        "observacoes": "Inovador e criativo, mas precisa controlar sua impulsividade."
+    },
+    {
+        "codigo": "9",
+        "cpfCnpj": "234.567.890-77",
+        "nome": "Rita de C\u00e1ssia Silva",
+        "sexo": "Feminino",
+        "email": "ritasilva@email.com",
+        "telefone1": "(41) 98765-4321",
+        "telefone2": "",
+        "data": "1988-08-15",
+        "observacoes": "Cumpre prazos com excel\u00eancia e \u00e9 \u00f3tima em trabalho em equipe."
+    },
+    {
+        "codigo": "10",
+        "cpfCnpj": "678.901.234-88",
+        "nome": "Jo\u00e3o Pedro Oliveira",
+        "sexo": "Masculino",
+        "email": "joaooliveira@email.com",
+        "telefone1": "(61) 94567-1234",
+        "telefone2": "",
+        "data": "1993-12-10",
+        "observacoes": "Entusiasta, mas precisa desenvolver habilidades t\u00e9cnicas."
+    },
+    {
+        "codigo": 11,
+        "cpfCnpj": "",
+        "nome": "",
+        "sexo": "Masculino",
+        "email": "",
+        "telefone1": "",
+        "telefone2": "",
+        "data": "",
+        "observacoes": ""
+    }
+]
