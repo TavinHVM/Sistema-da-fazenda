@@ -2,18 +2,18 @@
     {
         "codigo": "1",
         "cpfCnpj": "123.456.789-00",
-        "nome": "João da Silva",
+        "nome": "Jo\u00e3o da Silva",
         "sexo": "Masculino",
         "email": "joaosilva@email.com",
         "telefone1": "(11) 99999-1234",
         "telefone2": "(11) 98888-5678",
         "data": "1985-03-22",
-        "observacoes": "Gosta do casadinho em pedaços"
+        "observacoes": "Gosta do casadinho em peda\u00e7os"
     },
     {
         "codigo": "2",
         "cpfCnpj": "987.654.321-00",
-        "nome": "Maria de Fátima Oliveira",
+        "nome": "Maria de F\u00e1tima Oliveira",
         "sexo": "Feminino",
         "email": "mariaoliveira@email.com",
         "telefone1": "(21) 91234-5678",
@@ -41,7 +41,7 @@
         "telefone1": "(44) 70000-1234",
         "telefone2": "",
         "data": "1854-01-06",
-        "observacoes": "Prefere doces mais clássicos e menos açucarados."
+        "observacoes": "Prefere doces mais cl\u00e1ssicos e menos a\u00e7ucarados."
     },
     {
         "codigo": "5",
@@ -52,12 +52,12 @@
         "telefone1": "(11) 93456-7890",
         "telefone2": "",
         "data": "1970-05-29",
-        "observacoes": "Adora doces com inovação, como combinações inusitadas."
+        "observacoes": "Adora doces com inova\u00e7\u00e3o, como combina\u00e7\u00f5es inusitadas."
     },
     {
         "codigo": "6",
-        "cpfCnpj": "12.345.678/0001-90",
-        "nome": "Nestlé do Brasil",
+        "cpfCnpj": "12.345.678\/0001-90",
+        "nome": "Nestl\u00e9 do Brasil",
         "sexo": "",
         "email": "atendimento@nestle.com.br",
         "telefone1": "(11) 4004-5400",
@@ -67,7 +67,7 @@
     },
     {
         "codigo": "7",
-        "cpfCnpj": "98.765.432/0001-12",
+        "cpfCnpj": "98.765.432\/0001-12",
         "nome": "Lacta Brasil LTDA",
         "sexo": "",
         "email": "sac@lacta.com",
@@ -85,7 +85,7 @@
         "telefone1": "(35) 98888-9999",
         "telefone2": "",
         "data": "1959-09-07",
-        "observacoes": "Aprecia doces de alta qualidade e refinamento técnico."
+        "observacoes": "Aprecia doces de alta qualidade e refinamento t\u00e9cnico."
     },
     {
         "codigo": "9",
@@ -96,7 +96,7 @@
         "telefone1": "(71) 98888-1122",
         "telefone2": "",
         "data": "2003-04-14",
-        "observacoes": "Prefere porções pequenas e doces práticos para carregar."
+        "observacoes": "Prefere por\u00e7\u00f5es pequenas e doces pr\u00e1ticos para carregar."
     },
     {
         "codigo": "10",
@@ -107,7 +107,7 @@
         "telefone1": "(44) 98888-2222",
         "telefone2": "",
         "data": "1980-07-31",
-        "observacoes": "Fã de doces recheados com sabores mágicos e diferenciados."
+        "observacoes": "F\u00e3 de doces recheados com sabores m\u00e1gicos e diferenciados."
     },
     {
         "codigo": "11",
@@ -118,7 +118,7 @@
         "telefone1": "(19) 98888-3333",
         "telefone2": "",
         "data": "1981-09-13",
-        "observacoes": "Adora doces simples e energéticos, perfeitos para aventuras."
+        "observacoes": "Adora doces simples e energ\u00e9ticos, perfeitos para aventuras."
     },
     {
         "codigo": "12",
@@ -140,7 +140,7 @@
         "telefone1": "(11) 91234-5678",
         "telefone2": "",
         "data": "1986-09-17",
-        "observacoes": "Prefere doces minimalistas, de embalagens práticas e discretas."
+        "observacoes": "Prefere doces minimalistas, de embalagens pr\u00e1ticas e discretas."
     },
     {
         "codigo": "14",
@@ -151,7 +151,7 @@
         "telefone1": "(42) 98888-5555",
         "telefone2": "",
         "data": "1988-10-03",
-        "observacoes": "Fã de doces rústicos, que lembram a culinária do Condado."
+        "observacoes": "F\u00e3 de doces r\u00fasticos, que lembram a culin\u00e1ria do Condado."
     },
     {
         "codigo": "15",
@@ -162,7 +162,7 @@
         "telefone1": "(21) 90000-6789",
         "telefone2": "",
         "data": "1959-10-21",
-        "observacoes": "Prefere doces leves e nutritivos para missões longas."
+        "observacoes": "Prefere doces leves e nutritivos para miss\u00f5es longas."
     },
     {
         "codigo": "16",
@@ -173,7 +173,7 @@
         "telefone1": "(11) 90000-1234",
         "telefone2": "",
         "data": "1939-05-27",
-        "observacoes": "Prefere doces sofisticados, com combinações inusitadas."
+        "observacoes": "Prefere doces sofisticados, com combina\u00e7\u00f5es inusitadas."
     },
     {
         "codigo": "17",
@@ -195,7 +195,7 @@
         "telefone1": "(31) 90000-8888",
         "telefone2": "",
         "data": "1984-11-22",
-        "observacoes": "Prefere doces compactos e discretos, ideais para levar em missões."
+        "observacoes": "Prefere doces compactos e discretos, ideais para levar em miss\u00f5es."
     },
     {
         "codigo": "19",
@@ -206,7 +206,7 @@
         "telefone1": "(71) 98888-9999",
         "telefone2": "",
         "data": "1991-12-03",
-        "observacoes": "Aprecia doces robustos e com sabor intenso, como o doce de leite com café."
+        "observacoes": "Aprecia doces robustos e com sabor intenso, como o doce de leite com caf\u00e9."
     },
     {
         "codigo": "20",
@@ -217,7 +217,7 @@
         "telefone1": "(61) 91111-2222",
         "telefone2": "",
         "data": "1995-05-08",
-        "observacoes": "Prefere doces energéticos e práticos para levar em viagens."
+        "observacoes": "Prefere doces energ\u00e9ticos e pr\u00e1ticos para levar em viagens."
     },
     {
         "codigo": "21",
@@ -228,7 +228,7 @@
         "telefone1": "(41) 90000-1234",
         "telefone2": "",
         "data": "1941-03-22",
-        "observacoes": "Fã de doces refinados com ingredientes naturais."
+        "observacoes": "F\u00e3 de doces refinados com ingredientes naturais."
     },
     {
         "codigo": "22",
@@ -239,7 +239,7 @@
         "telefone1": "(51) 98765-4321",
         "telefone2": "",
         "data": "1920-07-04",
-        "observacoes": "Prefere doces clássicos, como doce de leite em barra."
+        "observacoes": "Prefere doces cl\u00e1ssicos, como doce de leite em barra."
     },
     {
         "codigo": "23",
@@ -283,7 +283,7 @@
         "telefone1": "(21) 98888-9999",
         "telefone2": "",
         "data": "1969-04-22",
-        "observacoes": "Fã de doces artesanais e bem decorados."
+        "observacoes": "F\u00e3 de doces artesanais e bem decorados."
     },
     {
         "codigo": "27",
@@ -294,7 +294,7 @@
         "telefone1": "(71) 91111-0000",
         "telefone2": "",
         "data": "1968-01-09",
-        "observacoes": "Prefere doces com grandes porções e recheios abundantes."
+        "observacoes": "Prefere doces com grandes por\u00e7\u00f5es e recheios abundantes."
     },
     {
         "codigo": "28",
@@ -327,7 +327,7 @@
         "telefone1": "(51) 90000-1122",
         "telefone2": "",
         "data": "1968-04-08",
-        "observacoes": "Prefere doces com sabores equilibrados e embalagem prática."
+        "observacoes": "Prefere doces com sabores equilibrados e embalagem pr\u00e1tica."
     },
     {
         "codigo": "31",
@@ -365,7 +365,7 @@
     {
         "codigo": "34",
         "cpfCnpj": "789.123.456-22",
-        "nome": "Patrícia Maria Santos Silva",
+        "nome": "Patr\u00edcia Maria Santos Silva",
         "sexo": "Feminino",
         "email": "patriciasantos@email.com",
         "telefone1": "(71) 90000-1122",
@@ -375,19 +375,19 @@
     },
     {
         "codigo": "35",
-        "cpfCnpj": "33.123.456/0001-99",
-        "nome": "Ambev S/A",
+        "cpfCnpj": "33.123.456\/0001-99",
+        "nome": "Ambev S\/A",
         "sexo": "",
         "email": "sac@ambev.com.br",
         "telefone1": "(11) 2345-6789",
         "telefone2": "",
         "data": "",
-        "observacoes": "Produto de alta qualidade e exportação"
+        "observacoes": "Produto de alta qualidade e exporta\u00e7\u00e3o"
     },
     {
         "codigo": "36",
         "cpfCnpj": "123.987.654-00",
-        "nome": "Pelé",
+        "nome": "Pel\u00e9",
         "sexo": "Masculino",
         "email": "pele@futebol.com",
         "telefone1": "(13) 90000-1234",
@@ -408,7 +408,7 @@
     },
     {
         "codigo": "38",
-        "cpfCnpj": "55.987.654/0001-32",
+        "cpfCnpj": "55.987.654\/0001-32",
         "nome": "Empresa Doce Brasil",
         "sexo": "",
         "email": "contato@docebrasil.com",
@@ -430,7 +430,7 @@
     },
     {
         "codigo": "40",
-        "cpfCnpj": "66.777.888/0001-22",
+        "cpfCnpj": "66.777.888\/0001-22",
         "nome": "Vigor Alimentos",
         "sexo": "",
         "email": "contato@vigor.com",
@@ -442,13 +442,13 @@
     {
         "codigo": "41",
         "cpfCnpj": "888.999.123-77",
-        "nome": "Gisele Bündchen",
+        "nome": "Gisele B\u00fcndchen",
         "sexo": "Feminino",
         "email": "gisele@fashion.com",
         "telefone1": "(41) 98765-1122",
         "telefone2": "",
         "data": "1980-07-20",
-        "observacoes": "Gosta de doce de leite sem açúcar"
+        "observacoes": "Gosta de doce de leite sem a\u00e7\u00facar"
     },
     {
         "codigo": "42",
@@ -459,7 +459,7 @@
         "telefone1": "(71) 99888-7777",
         "telefone2": "",
         "data": "1990-07-12",
-        "observacoes": "Gosta de doces com ingredientes exóticos e forte presença de especiarias."
+        "observacoes": "Gosta de doces com ingredientes ex\u00f3ticos e forte presen\u00e7a de especiarias."
     },
     {
         "codigo": "43",

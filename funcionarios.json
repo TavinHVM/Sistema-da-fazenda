@@ -108,16 +108,5 @@
         "telefone2": "",
         "data": "1993-12-10",
         "observacoes": "Entusiasta, mas precisa desenvolver habilidades t\u00e9cnicas."
-    },
-    {
-        "codigo": 11,
-        "cpfCnpj": "",
-        "nome": "",
-        "sexo": "Masculino",
-        "email": "",
-        "telefone1": "",
-        "telefone2": "",
-        "data": "",
-        "observacoes": ""
     }
 ]
